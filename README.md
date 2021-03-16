@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Hacker du dimanche
 
 Ce projet est un projet de cours, en groupe de 3. C'est un projet NodeJS utilisant également Docker et NGinx
@@ -33,3 +34,6 @@ node app.js
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+=======
+# hacker
+>>>>>>> 2c3a96d1322cdeed7b173c8ec2d558962e885d54
