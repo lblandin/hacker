@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  type="text/css" href="../style/index.css" media="screen">
+    <title>Hacker</title>
+</head>
+<body>
+    <main class="contenu-contact">
+
+        <!-- Formulaire -->
+        <div class="form-contact">
+            <h1>CONTACTEZ NOUS</h1>
+            <form class="form-contact-contenu" METHOD="POST" ACTION="">
+                <label for="nom">Nom :<br></label><input id="nom" name="nom" type="text" pattern="^[a-zA-Z' \-]+$" class="input-nom" maxlength="25" size="25" placeholder="Entrez votre nom" required><br>
+                <label for="prenom">Prénom :<br></label><input id="prenom" name="prenom" type="text" pattern="^[a-zA-Z' \-]+$" class="input-prenom" maxlength="25" size="25" placeholder="Entrez votre prénom" required /><br>
+                <label for="datenaissance">Date de naissance :<br></label><input id="datenaissance" name="datenaissance" type="date" class="input-dateNaissance" pattern="" size="25"  placeholder="Entrez votre date de naissance" /><br>
+                <label for="email">Email :<br></label><input id="email" name="email" type="email" pattern="^.+@.+\.(fr|com|net|org)$" class="input-email" maxlength="50" size="25"  placeholder="Entrez votre mail" /><br>
+                <label for="telephone">Téléphone :<br></label><input id="telephone" name="telephone" type="tel" class="input-telephone" pattern="^([0-9]{2,2}(\.|-| )?){4,4}[0-9]{2,2}$" maxlength="50" size="25"  placeholder="Entrez votre numero de telephone" /><br>
+                <label for="adress">Adresse :<br></label><input id="adresse" name="adresse" type="text" class="input-adresse" pattern="^[a-zA-Z' \-]+$" maxlength="50" size="25"  placeholder="Entrez votre adresse" /><br>
+        
+                <button type="submit" class="contact-button">Envoyer</button>
+        
+                <p class="p-contact">
+                En soumettant ce formulaire, Les hackeurs du dimanche n'utiliseront pas vos données à des fins commerciales.
+                </p>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

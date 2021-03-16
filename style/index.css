@@ -1,0 +1,165 @@
+/* FICHIER CSS DU SITE */
+
+
+/* Police du site */
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+/* Toutes les couleurs du site */
+:root {
+  --main-white: #ffffff;
+
+  --main-light-blue: #c0ccdf;
+  --main-blue: #0098d4;
+  --main-black-blue: #0548BD; 
+  --main-black-blue2: #023285; 
+  --main-darkblue: #001e69;
+
+  --main-grey : #ebebeb;
+
+  --main-black: #1c1f20;
+}
+
+/* Dimmension du site par raport à l'écran */
+/* Ne pas modifier */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ne pas modifier */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+/* corps du site */
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--main-white);
+  margin: 0; 
+  padding: 0;
+}
+
+/* texte du site */
+p {
+  color : var(--main-black);
+  max-width: 900px;
+  text-align: center;
+  line-height: 2;
+  margin: auto;
+}
+
+/* titre des pages */
+h1{
+  font-weight: 500;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--main-black-blue);
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+
+.form-contact {
+    width: 80%;
+}
+
+.form-contact-contenu {
+    width: 100%;
+}
+
+/* CONTACT CSS */
+
+/* Contenu des infos complÃ©mentaires (Maps, Horaires) */
+.infos-contact {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+  }
+  
+  
+  /* Horaires */
+  .horaires {
+    line-height: 3;
+  }
+  
+  /* Contenu du formulaire */
+  .form-contact {
+    width: 50%;
+    margin: 3.125rem auto 0 auto;
+  }
+  
+  /* Texte formulaire */
+  label {
+    align-items: center;
+    font-size: 1.8rem;
+  }
+  
+  /* Champs de saisie */
+  .input-nom, 
+  .input-prenom, 
+  .input-email, 
+  .input-sujet, 
+  .input-telephone {
+    width: 100%;
+    height: 4rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    display: block;
+    padding: 0.2rem 0.75rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+  }
+  
+  input,
+  button,
+  select,
+  textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+  
+  /* Champs de saisie du message */
+  .input-textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+    resize: vertical;
+  }
+  
+/* Formulaire de contact */
+.form-contact-contenu {
+    background: var(--main-black-blue2);
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.5rem;
+    margin: auto;
+}
+  
+/* Bouton envoyer de la page contact */
+.contact-button {
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 0.75rem;
+    background: var(--main-darkblue);
+    color: inherit;
+    cursor: pointer;
+}
+  
+/* Texte de la page contact */
+.p-contact {
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--main-white);
+}
