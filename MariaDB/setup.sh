@@ -1,7 +1,7 @@
 #!/bin/bash
 
 export $(/.env | xargs) > /dev/null
-sed -i -e 's/!i5W27+Fs/'`echo $!i5W27+FsD`'/g' /setup.sql
+sed -i -e 's/MYSQL_SECU_PASSWORD/'`echo $MYSQL_SECU_PASSWORD`'/g' /setup.sql
 mysql -u root -p`echo $MYSQL_ROOT_PASSWORD` < /setup.sql
 
 
