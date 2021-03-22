@@ -12,7 +12,7 @@ services:
 
   mariadb:
     build:
-      # context: .
+      context: .
       dockerfile: ./mariadb/Dockerfile
     restart: on-failure
     volumes:
