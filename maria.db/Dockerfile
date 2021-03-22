@@ -1,4 +1,4 @@
-FROM mariadb:10.4
+FROM mariadb:latest
 COPY /.env /
 COPY ./mariadb/setup.sql /
 COPY ./mariadb/setup.sh /

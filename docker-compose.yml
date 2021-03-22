@@ -1,7 +1,7 @@
 version: "2"
 services:
   node:
-    build: .
+    build: ./
 
   nginx:
     build: ./nginx/
@@ -14,6 +14,7 @@ services:
     build:
       context: .
       dockerfile: ./mariadb/Dockerfile
+    restart: on-failure
     volumes:
       - mariadb-data:/var/lib/mysql
     environment:
